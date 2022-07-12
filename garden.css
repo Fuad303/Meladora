@@ -1,0 +1,89 @@
+.garden__detail__title
+{
+    margin-left: 210px;
+    padding-top: 50px;
+    padding-bottom: 116px;
+    font-size: 40px;
+    color: #3E3737;
+    font-weight: 600;
+}
+.garden__detail__item
+{
+    justify-content: center;
+    display: flex;
+    gap: 55px;
+    margin-bottom: 50px;
+}
+.garden__detail__item__info
+{
+    width: 555px;
+}
+.garden__detail__item__number
+{
+    font-size: 120px;
+    color: #918F8F;
+}
+.garden__detail__item__title
+{
+    font-size: 32px;
+    color: #5F5C5C;
+}
+.garden__detail__item__text
+{
+    padding-top: 15px;
+    font-size: 18px;
+    color: #7C7A7A;
+}
+.garden__detail__design img
+{
+    position: absolute;
+    width: 250px;
+    left: -30px;
+}
+.garden__detail__item__img img
+{
+    width: 420px;
+    height: 420px;
+}
+@media only screen and (max-width: 1027px)
+{
+   .garden__detail__item
+   {
+      margin-left: 36px;
+      margin-right: 36px;
+   }
+   .garden__detail__design
+   {
+      display: none;
+   }
+}
+@media only screen and (max-width: 768px)
+{
+    .garden__detail__title
+    {
+        text-align: center;
+        margin-left: 0;
+    }
+    .garden__detail__item
+    {
+        display: block;
+    }
+    .garden__detail__item__text
+    {
+        width: 350px;
+        overflow: scroll;
+    }
+    .garden__detail__item__img img
+    {
+        width: 300px;
+        height: 300px;
+    }
+}
+@media only screen and (max-width: 450px)
+{
+    .garden__detail__item__text
+    {
+        width: 250px;
+        overflow: scroll;
+    }
+}
