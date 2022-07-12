@@ -8,6 +8,11 @@
     transition: all 0.4s;
     font-family: 'Cormorant Garamond', serif;
 }
+*::selection
+{
+    background-color: #ffc107;
+    color: #FFFFFF;
+}
 
 /* Nav Styles */
 .container{
