@@ -1,7 +1,7 @@
 .garden__detail__title
 {
-    margin-left: 210px;
-    padding-top: 50px;
+    margin-left: 150px;
+    margin-top: 48px;
     padding-bottom: 116px;
     font-size: 40px;
     color: #3E3737;
@@ -38,7 +38,8 @@
 {
     position: absolute;
     width: 250px;
-    left: -30px;
+    margin-left: -100px;
+    margin-top: 20px;
 }
 .garden__detail__item__img img
 {

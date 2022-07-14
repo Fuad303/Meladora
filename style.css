@@ -29,11 +29,18 @@
 {
     color: #91B40D;
 }
+.social__media a
+{
+    color: #91B40D;
+    text-decoration: none;
+}
 .nav__number
 {
     display: flex;
 }
 .nav{
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     height: 65px;
     position: static;
@@ -44,32 +51,30 @@
 .nav div.nav__logo{
     width: 180px;
     height: 10px;
-    position: absolute;
 }
 .nav div.nav__menu{
-    width: 600px;
     height: 65px;
-    float: right;
 }
 .nav div.nav__menu ul{
-    width:100%;
-    height: 65px;
     display: flex;
     list-style: none;
-    gap: 30px;
     padding-top: 15px;
 }
 .nav div.nav__menu ul li{
-    width: 120px;
     height: 65px;
+    margin-right: 5px;
 }
 .nav div.nav__menu ul li a{
     text-decoration: none;
     color: #3E3737;
-    font-weight: 900;
+    font-weight: 800;
+    font-size: 19px;
+    padding: 13px; 
+    border-radius: 4px;
 }
 .nav div.nav__menu ul li a:hover{
-    color:#91B40D;
+    color:#FFFFFF;
+    background-color: #91B40D;
 }
 .nav div.media_button {
     width: 40px;
@@ -155,22 +160,22 @@
     .nav div.nav__logo{
         margin-left: 15px;
     }
-    
     .nav div.nav__menu{
         background-color: #91B40D;
-        width: 100%;
         margin-top: 65px;
-        height: 0px;
+        height: 0;
         overflow: hidden;
+        flex-shrink: 0;
+
     }
     .nav div.nav__menu ul li a:hover{
-        color: #d2d4c9;
+        color: #1a1b18;
     }
-    
     .nav div.show_list{
-        height: 350px;
-    }
-    
+        height: 300px;
+        z-index: 1;
+        width: 100%;
+    }   
     .nav div.nav__menu ul{
         flex-direction: column;
         width: 100%;
@@ -179,20 +184,21 @@
         right: 0;
         left: 0;
     }
-    
     .nav div.nav__menu ul li {
         width: 100%;
-        height: 20px;
+        height: 70px;
         background-color:#91B40D;
     }
     
     .nav div.nav__menu ul li a{
         text-align: center;
-        line-height: 40px;
+        line-height: 20px;
         width: 100%;
         height: 40px;
         display: table;
         color: aliceblue;
+        font-size: 15px;
+        padding: 0;
     }
     
     .nav div.media_button{
@@ -454,34 +460,39 @@
     }
 }
 /* Food Styles */
+
+.filterDiv {
+    display: none;
+    color: #ffffff;
+    text-align: center;
+    margin: 2px;
+  }
+  .show {
+    display: flex;
+  }
+  
+  /* Style the buttons */
+   .btn {
+    font-size: 15px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 6px 8px;
+    cursor: pointer;
+  }
+  .food__options
+  {
+    text-align: center;
+  }
+  .btn:hover {
+    color: #91B40D; 
+  } 
 .food__title
 {
     font-size: 30px;
     font-weight: bold;
     text-align: center;
     padding-top: 120px;
-    padding-bottom: 10px;
-}
-.food__options ul
-{
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    padding-bottom: 10px;
-}
-.food__options ul li
-{ 
-    list-style-type: none;
-}
-.food__options ul li a
-{
-    text-decoration: none;
-    color: #2A332B;
-    font-weight: bold;
-}
-.food__options ul li a:hover
-{
-    color: #91B40D;
 }
 .food__item__wrapper
 {
@@ -491,6 +502,8 @@
     gap: 40px;
     padding-right: 50px;
     padding-left: 100px; 
+    margin-left: 0;
+    margin-right: 0;
 }
 .food__item__wrapper a
 {
@@ -541,6 +554,7 @@
 }
 @media only screen and (max-width: 335px)
 {
+
     .food__options ul li 
     {
         font-size: 14px;
@@ -671,6 +685,10 @@
 }
 @media only screen and (max-width: 768px)
 {
+    .footer__img img
+    {
+       width: 250px;
+    }
     .footer__info
     {
        margin-top: -25px;
@@ -683,8 +701,9 @@
 {
     .footer__img img
     {
-        width: 220px;
-        margin-bottom: -25px;
+        width: 180px;
+        margin-bottom: -50px;
+        padding-bottom: 0;
     }
 }
 @media only screen and (max-width: 287px)
@@ -693,5 +712,6 @@
     {
         width: 180px;
         margin-bottom: -50px;
+        padding-bottom: 0;
     }
 }

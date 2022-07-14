@@ -30,6 +30,23 @@
         display: none;
     }
 }
+@media only screen and (max-width: 490px)
+{
+    .food__item
+    {
+        width: 200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .food__item__img img
+    {
+        display: inline-block;
+        margin: 0 auto;
+       width: 120px;
+    }    
+}
 /* Food Detail Styles */
 .food__wrapper
 {

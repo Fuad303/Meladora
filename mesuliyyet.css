@@ -2,9 +2,9 @@
 {
     font-size: 48px;
     color: #3E3737;
-    margin-left: 210px;
     margin-bottom: 100px;
-    margin-top: 30px;
+    margin-left: 150px;
+    margin-top: 48px;
 }
 .responsibility__text
 {
@@ -23,7 +23,7 @@
 {
     width: 250px;
     margin-left: -100px;
-    margin-top: -350px;
+    margin-top: 20px;
 }
 @media only screen and (max-width: 900px)
 {
