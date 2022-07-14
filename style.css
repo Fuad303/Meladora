@@ -42,7 +42,7 @@
 #search
 {
     position: absolute;
-    margin-top: 2%;
+    margin-top: 30px;
     right: 5%;
     background-color: transparent;
     border: none;
@@ -174,17 +174,24 @@
     .container{
         margin: 0;
     }
-    
+    #search
+    {
+       position: absolute;
+       right: 5%;
+       background-color: transparent;
+       padding: 5px;
+       margin-top: 0;
+    }
     .nav div.nav__logo{
         margin-left: 15px;
     }
     .nav div.nav__menu{
+        position: absolute;
         background-color: #91B40D;
         margin-top: 65px;
         height: 0;
         overflow: hidden;
         flex-shrink: 0;
-
     }
     .nav div.nav__menu ul li a:hover{
         color: #1a1b18;
@@ -215,7 +222,7 @@
         height: 40px;
         display: table;
         color: aliceblue;
-        font-size: 15px;
+        font-size: 17px;
         padding: 0;
     }
     
