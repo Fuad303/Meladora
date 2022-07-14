@@ -34,6 +34,24 @@
     color: #91B40D;
     text-decoration: none;
 }
+/* Search Bar */
+.search
+{
+    cursor: pointer;
+}
+#search
+{
+    position: absolute;
+    margin-top: 2%;
+    right: 5%;
+    background-color: transparent;
+    border: none;
+}
+#search:focus
+{
+    background-color: #FFFFFF;
+}
+/* End of search bar */
 .nav__number
 {
     display: flex;
