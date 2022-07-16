@@ -174,13 +174,9 @@
     .container{
         margin: 0;
     }
-    #search
+    .search
     {
-       position: absolute;
-       right: 5%;
-       background-color: transparent;
-       padding: 5px;
-       margin-top: 0;
+        display: none;
     }
     .nav div.nav__logo{
         margin-left: 15px;
@@ -233,7 +229,7 @@
 }       
 .background
 {
-    background: url(./background.png) ;
+    background: url(./background.png);
     background-size: cover;
     height: 500px;
     margin-top: 40px;
@@ -650,7 +646,10 @@
 {
     width: 100%;
     margin-bottom: -5px;
-
+    overflow: hidden;
+}
+.footer{
+    overflow: hidden;
 }
 .footer__wrapper
 {
