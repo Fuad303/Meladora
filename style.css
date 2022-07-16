@@ -42,14 +42,18 @@
 #search
 {
     position: absolute;
-    margin-top: 30px;
+    margin-top: 42px;
     right: 5%;
-    background-color: transparent;
     border: none;
+    width: 175px;
+    height: 25px;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
 }
 #search:focus
 {
-    background-color: #FFFFFF;
+    border: 3px solid #91B40D;;
 }
 /* End of search bar */
 .nav__number
@@ -174,9 +178,14 @@
     .container{
         margin: 0;
     }
-    .search
+    #search
     {
-        display: none;
+        margin-top: 0;
+        background-color: #91B40D;
+    }
+    #search:focus
+    {
+        background-color: #F3F3F3;
     }
     .nav div.nav__logo{
         margin-left: 15px;
@@ -333,7 +342,6 @@
         margin-right: 5%;
         min-width: 250px;
         overflow: scroll;
-        background-color: #F5F5F5;
     }
     .about__item__shortcut 
     {
@@ -359,10 +367,6 @@
 }
 @media only screen and (max-width: 477px)
 {
-    .about__logo__item
-    {
-        display: none;
-    }
     .about__text
     {
         width: 75%;
@@ -406,6 +410,7 @@
     text-align: center;
     font-size: 30px;
     font-weight: bold;
+    margin-top: 20px;
 }
 .garden__wrapper
 {
@@ -432,11 +437,19 @@
 .garden__item__text
 {
     color: #7C7A7A;
-    padding-bottom: 10px;
+    padding: 10px;
+
 }
 .garden__item .garden__design
 {
     position: absolute;
+}
+@media only screen and (max-width: 1257px)
+{
+    .garden__wrapper
+    {
+        flex-wrap: wrap;
+    }
 }
 @media only screen and (max-width: 973px)
 {
@@ -457,6 +470,7 @@
     }
     .garden__item
     {
+        margin-bottom: 30px;
         max-width: 250px;
     }
     .garden__item:last-child
@@ -596,9 +610,9 @@
 .blog__wrapper
 {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     padding-left: 110px;
-    padding-right: 135px;
 }
 .blog__item__title
 {
@@ -615,13 +629,7 @@
     font-weight: normal;
     font-size: 14px;
 }
-@media only screen and (max-width: 1349px)
-{
-    .blog__item:last-of-type
-    {
-       display: none;
-    }
-}
+
 @media only screen and (max-width: 768px)
 {
     .blog__wrapper
@@ -636,8 +644,8 @@
         max-width: 100%;
         max-height: 250px;
         min-width: 150px;
+        margin-bottom: 25px;
         overflow: scroll;
-
     }
 
 }
@@ -711,7 +719,8 @@
 {
     .footer__img img
     {
-       width: 250px;
+       width: 330px;
+
     }
     .footer__info
     {
@@ -719,6 +728,13 @@
        display: block;
        text-align: center;
        padding-bottom: 0;
+    }
+}
+@media only screen and (max-width: 600px)
+{
+    .footer__img img
+    {
+        width: 250px;
     }
 }
 @media only screen and (max-width: 350px)
