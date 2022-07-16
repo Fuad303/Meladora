@@ -720,7 +720,7 @@
     .footer__img img
     {
        width: 330px;
-
+       margin: 0 auto;
     }
     .footer__info
     {
@@ -735,6 +735,7 @@
     .footer__img img
     {
         width: 250px;
+        margin: 0 auto;
     }
 }
 @media only screen and (max-width: 350px)
@@ -744,6 +745,7 @@
         width: 180px;
         margin-bottom: -50px;
         padding-bottom: 0;
+        margin: 0 auto;
     }
 }
 @media only screen and (max-width: 287px)
@@ -753,5 +755,6 @@
         width: 180px;
         margin-bottom: -50px;
         padding-bottom: 0;
+        margin: 0 auto;
     }
 }
